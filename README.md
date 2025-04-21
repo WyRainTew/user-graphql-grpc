@@ -46,10 +46,11 @@ user-graphql-grpc/
 
 要正确运行此项目、请按照以下步骤操作：
 
-### 步骤 1: 进入项目目录
+### 步骤 1: 克隆项目
 
 ```bash
-cd /Users/wyrain/GoCode/user-graphql-grpc
+git clone https://github.com/WyRainTew/user-graphql-grpc.git
+cd user-graphql-grpc
 ```
 
 ### 步骤 2: 启动 gRPC 服务器
@@ -70,7 +71,7 @@ gRPC 服务器已启动在 :50051
 打开一个新的终端窗口、进入项目目录并运行：
 
 ```bash
-cd /Users/wyrain/GoCode/user-graphql-grpc
+cd user-graphql-grpc  # 如果尚未在项目目录中
 go run graphql-server/server.go
 ```
 
