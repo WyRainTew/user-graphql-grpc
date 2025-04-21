@@ -21,7 +21,6 @@ user-graphql-grpc/
 │       ├── schema.graphqls// GraphQL Schema定义
 │       ├── resolver.go    // 查询解析器
 │       └── generated.go   // 自动生成的代码
-├── client.go              // 测试客户端
 ├── gqlgen.yml             // gqlgen配置
 └── go.mod                 // Go模块定义
 ```
