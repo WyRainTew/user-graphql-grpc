@@ -1,0 +1,25 @@
+# GraphQL schema 文件路径
+schema:
+  - graphql-server/graph/*.graphqls
+
+# 生成的GraphQL代码位置
+exec:
+  filename: graphql-server/graph/generated.go
+  package: graph
+
+# 生成的模型代码位置
+model:
+  filename: graphql-server/graph/model/models_gen.go
+  package: model
+
+# 生成的解析器代码位置
+resolver:
+  layout: follow-schema
+  dir: graphql-server/graph
+  package: graph
+  filename_template: "{name}.resolvers.go"
+  
+# 允许从其他包引用模型
+models:
+  User:
+    model: user-graphql-grpc/graphql-server/graph/model.User 
